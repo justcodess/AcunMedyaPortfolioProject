@@ -1,0 +1,20 @@
+﻿@model AcunMedyaPortfolioProject.Models.Introduction
+
+@{
+    ViewBag.Title = "CreateIntroduction";
+}
+
+<h2>Giriş Oluştur</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info ">Giriş Bilgisini Kaydet</button>
+    </form>
+
+</div>

@@ -1,0 +1,39 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.Introduction>
+
+@{
+    ViewBag.Title = "Introduction";
+}
+
+<h2>Giriş Sayfası</h2>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Başlık</th>
+                <th>Şirket Adı</th>
+                <th>Başlangıç Tarihi</th>
+                <th>Bitiş Tarihi</th>
+                <th>Açıklama</th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var introduction in Model)
+            {
+                <tr>
+                    <td>@introduction.Id</td>
+                    <td>@introduction.Title</td>
+                    <td>@introduction.Description</td>
+
+                    <td><a href="/Introduction/UpdateIntroduction/@introduction.Id" class="btn btn-success">Güncelle</a></td>
+                    <td><a href="/Introduction/DeleteIntroduction/@introduction.Id" class="btn btn-danger">Kaldır</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Introduction/CreateIntroduction" class="btn btn-primary">Yeni Giriş Bilgisi Ekle</a>
+
+</div>

@@ -1,0 +1,16 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.SocialMedia>
+
+@if (Model != null && Model.Any())
+{
+    <ul class="contact-social">
+        @foreach (var item in Model)
+        {
+            <li><a href="@item.SiteUrl">@item.SiteName</a></li>
+        }
+    </ul>
+}
+else
+{
+    <p>No social media links available.</p>
+}
+

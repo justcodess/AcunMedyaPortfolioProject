@@ -1,0 +1,44 @@
+﻿@model AcunMedyaPortfolioProject.Models.Contact
+
+<section id="contact" class="s-contact target-section">
+
+    <div class="row contact-top">
+        <div class="column lg-12">
+            <h2 class="text-pretitle">
+               HADİ ŞİMDİ !
+            </h2>
+
+            <p class="h1">
+                Benimle İletişime Geç
+            </p>
+        </div>
+    </div> <!-- end contact-top -->
+
+    <div class="row contact-bottom">
+        <div class="column lg-3 md-5 tab-6 stack-on-550 contact-block">
+            <h3 class="text-pretitle">Bana Ulaşın:</h3>
+            <p class="contact-links">
+
+                <a href="@Model.MailAdress" class="mailtoui">zeynepdeler@gmail.com</a> <br>
+                <a href="@Model.Phone">Beni Ara</a>
+            </p>
+        </div>
+        <div class="column lg-4 md-5 tab-6 stack-on-550 contact-block">
+            <h3 class="text-pretitle">Sosyal Medya:</h3>
+
+            <ul class="contact-social">
+                <li><a href="">Github</a></li>
+                <li><a href="">Medium</a></li>
+                <li><a href="">Linkedin</a></li>
+
+
+
+
+            </ul>
+        </div>
+        <div class="column lg-4 md-12 contact-block">
+            <a href="@Model.MailAdress" class="mailtoui btn btn--medium u-fullwidth contact-btn">Benimle Tanış</a>
+        </div>
+    </div> <!-- end contact-bottom -->
+
+</section>

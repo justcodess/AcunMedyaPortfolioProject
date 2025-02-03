@@ -1,0 +1,32 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.SocialMedia>
+@{
+    ViewBag.Title = "SocialMedia";
+}
+
+<h2>Sosyal Medya Sayfası</h2>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Site Adı</th>
+                <th>Site >Url</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var socialMedia in Model)
+            {
+                <tr>
+                    <td>@socialMedia.Id</td>
+                    <td>@socialMedia.SiteName</td>
+                    <td>@socialMedia.SiteUrl</td>
+                    <td><a href="/SocialMedia/UpdateSocialMedia/@socialMedia.Id" class="btn btn-success">Güncelle</a></td>
+                    <td><a href="/SocialMedia/DeleteSocialMedia/@socialMedia.Id" class="btn btn-danger">Kaldır</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/SocialMedia/CreateSocialMedia" class="btn btn-primary">Sosyal Medya Ekle</a>
+
+</div>

@@ -1,0 +1,21 @@
+﻿@model AcunMedyaPortfolioProject.Models.SocialMedia
+@{
+    ViewBag.Title = "CreateSocialMedia";
+}
+
+<h2>Sosyal Medya Bilgisi Ekleme Sayfası</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Sosyal Media Adı</label>
+        @Html.TextBoxFor(x => x.SiteName, new { @class = "form-control" })
+        <br />
+        <label>Sosyal Medya Url</label>
+        @Html.TextBoxFor(x => x.SiteUrl, new { @class = "form-control" })
+        <br />
+        
+
+        <button class="btn btn-info ">Sosyal Medya Bilgisini Kaydet</button>
+    </form>
+
+</div>

@@ -1,0 +1,13 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.Category>
+
+
+<div class="row about-expertise" data-animate-block>
+    <div class="column lg-12">
+        <div class="btn-group" role="group">
+            @foreach (var item in Model)
+            {
+                <a href="#" class="btn btn-primary">@item.Name</a>
+            }
+        </div>
+    </div>
+</div>

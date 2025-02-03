@@ -1,0 +1,30 @@
+﻿@model AcunMedyaPortfolioProject.Models.Experience
+
+@{
+    ViewBag.Title = "CreateExperience";
+}
+
+<h2>Tecrübe Oluştur</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Kurum Adı</label>
+        @Html.TextBoxFor(x => x.CompanyName, new { @class = "form-control" })
+        <br />
+        <label>Başlangıç Tarihi</label>
+        @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+        <br />
+        <label>Bitiş Tarihi</label>
+        @Html.TextBoxFor(x => x.EndDate, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info ">Tecrübe Bilgisini Kaydet</button>
+    </form>
+
+</div>
+

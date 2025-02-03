@@ -1,0 +1,29 @@
+﻿@model AcunMedyaPortfolioProject.Models.Education
+
+@{
+    ViewBag.Title = "CreateEducation";
+}
+
+<h2>Eğitim Bilgisi Ekleme Sayfası</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Kurum Adı</label>
+        @Html.TextBoxFor(x => x.InstutionName, new { @class = "form-control" })
+        <br />
+        <label>Başlangıç Tarihi</label>
+        @Html.TextBoxFor(x => x.StartDate, new { @class = "form-control" })
+        <br />
+        <label>Bitiş Tarihi</label>
+        @Html.TextBoxFor(x => x.EndTime, new { @class = "form-control" })
+        <br />
+        <label>Açıklama</label>
+        @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+        <br />
+        <button class="btn btn-info ">Eğitim Bilgisini Kaydet</button>
+    </form>
+
+</div>

@@ -1,0 +1,22 @@
+﻿@model AcunMedyaPortfolioProject.Models.Footer
+
+@{
+    ViewBag.Title = "UpdateFooter";
+}
+
+<h2>Bilgiyi Güncelle</h2>
+
+<div class="container">
+    <form method="post">
+        <label>Başlık</label>
+        @Html.TextBoxFor(x => x.Title, new { @class = "form-control" })
+        <br />
+        <label>Kişi Adı</label>
+        @Html.TextBoxFor(x => x.PersonName, new { @class = "form-control" })
+        <br />
+       
+      
+        <button class="btn btn-info ">Yeni Bilgiyi Kaydet</button>
+    </form>
+
+    </

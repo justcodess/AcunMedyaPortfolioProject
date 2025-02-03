@@ -1,0 +1,38 @@
+﻿@model List<AcunMedyaPortfolioProject.Models.Footer>
+
+@{
+    ViewBag.Title = "Footer";
+}
+
+<h2>Kapanış Sayfası</h2>
+
+<div class="container">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Başlık</th>
+                <th>Kişi Adı</th>
+                
+
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var footer in Model)
+            {
+                <tr>
+                    <td>@footer.Id</td>
+                    <td>@footer.Title</td>
+                    <td>@footer.PersonName</td>
+                  
+
+                    <td><a href="/Footer/UpdateFooter/@footer.Id" class="btn btn-success">Güncelle</a></td>
+                    <td><a href="/Footer/DeleteFooter/@footer.Id" class="btn btn-danger">Kaldır</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <a href="/Footer/CreateFooter" class="btn btn-primary">Yeni Bilgi  Ekle</a>
+
+</div>
